@@ -1,0 +1,10 @@
+# In this directory, run the following command to build this builder.
+# $ gcloud builds submit . --config=cloudbuild.yaml
+
+steps:
+# Build the alpine and debian versions.
+- name: 'ci/bootstrap'
+- name: 'ci/build'
+- name: 'ci/tag'
+- name: 'ci/test'
+- name: 'ci/publish'
