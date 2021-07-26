@@ -1,4 +1,4 @@
-FROM alpine:3.12.0
+FROM balenalib/raspberry-pi-alpine:3.12
 
 RUN apk upgrade --no-cache && \
     apk add --no-cache \
